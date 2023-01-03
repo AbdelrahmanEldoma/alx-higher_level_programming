@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print("\"Programming is like building a multilingual puzzle\n")
+str = "\"Programming is like building a multilingual puzzle"
+print(f"{str:s}\n")
