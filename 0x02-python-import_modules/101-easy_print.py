@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-exec('echo #pythoniscool')
+import subprocess
+subprocess.run(["ls"])
