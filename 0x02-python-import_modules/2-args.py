@@ -9,7 +9,7 @@ def main():
         print("{:d} argument:".format(len(sys.argv)))
         print("{:d}: {:s}".format(1, sys.argv[0]), end="")
     else:
-        for j in range(0, len(sys.argv)):
+        for j in range(0, len(sys.argv) - 1):
             if j == len(sys.argv) - 1:
                 print("{:d} arguments:".format(len(sys.argv)))
                 print("{:d}: {:s}".format(j + 1, sys.argv[j]), end="")
