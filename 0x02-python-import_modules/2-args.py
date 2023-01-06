@@ -9,12 +9,12 @@ def main():
         elif len(sys.argv) == 1:
             print("{:d} argument:".format(len(sys.argv)))
             print("{:d}: {:s}".format(j + 1, sys.argv[j]), end="")
-        elif j < len(sys.argv) - 1:
-            print("{:d} arguments:".format(len(sys.argv)))
-            print("{:d}: {:s}".format(j + 1, sys.argv[j]))
-        else:
+        elif j == len(sys.argv) - 1:
             print("{:d} arguments:".format(len(sys.argv)))
             print("{:d}: {:s}".format(j + 1, sys.argv[j]), end="")
+        else:
+            print("{:d} arguments:".format(len(sys.argv)))
+            print("{:d}: {:s}".format(j + 1, sys.argv[j]))
 
 
 if __name__ == "__main__":
