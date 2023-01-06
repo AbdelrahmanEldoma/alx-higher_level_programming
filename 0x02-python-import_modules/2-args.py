@@ -9,12 +9,11 @@ def main():
         print("{:d} argument:".format(len(sys.argv)))
         print("{:d}: {:s}".format(1, sys.argv[0]), end="")
     else:
+        print("{:d} arguments:".format(len(sys.argv)))
         for j in range(1, len(sys.argv)):
             if j == len(sys.argv):
-                print("{:d} arguments:".format(len(sys.argv)))
                 print("{:d}: {:s}".format(j, sys.argv[j]), end="")
             else:
-                print("{:d} arguments:".format(len(sys.argv)))
                 print("{:d}: {:s}".format(j, sys.argv[j]))
 
 
