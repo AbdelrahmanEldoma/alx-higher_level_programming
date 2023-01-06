@@ -3,19 +3,19 @@ import sys
 
 
 def main():
-    if len(sys.argv) == 0:
-        print("{:d} arguments.".format(len(sys.argv)), end="")
-    elif len(sys.argv) == 1:
+    if len(sys.argv) - 1 == 0:
+        print("{:d} arguments.".format(len(sys.argv) - 1), end="")
+    elif len(sys.argv) - 1 == 1:
         print("{:d} argument:".format(len(sys.argv)))
         print("{:d}: {:s}".format(1, sys.argv[0]), end="")
     else:
-        for j in range(0, len(sys.argv) - 1):
-            if j == len(sys.argv) - 1:
+        for j in range(1, len(sys.argv)):
+            if j == len(sys.argv):
                 print("{:d} arguments:".format(len(sys.argv)))
-                print("{:d}: {:s}".format(j + 1, sys.argv[j]), end="")
+                print("{:d}: {:s}".format(j, sys.argv[j]), end="")
             else:
                 print("{:d} arguments:".format(len(sys.argv)))
-                print("{:d}: {:s}".format(j + 1, sys.argv[j]))
+                print("{:d}: {:s}".format(j, sys.argv[j]))
 
 
 if __name__ == "__main__":
