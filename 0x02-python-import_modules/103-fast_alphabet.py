@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-import sys
-sys.stdout.write("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+import string
+print(string.ascii_uppercase)
