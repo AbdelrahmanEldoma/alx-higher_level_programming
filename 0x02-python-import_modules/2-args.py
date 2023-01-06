@@ -11,7 +11,7 @@ def main():
     else:
         for j in range(1, len(sys.argv)):
             if j == len(sys.argv):
-                print("{:d} arguments:".format(len(sys.argv)))
+                print("{:d} arguments:".format(len(sys.argv)), end="")
                 print("{:d}: {:s}".format(j, sys.argv[j]))
             else:
                 print("{:d} arguments:".format(len(sys.argv)))
