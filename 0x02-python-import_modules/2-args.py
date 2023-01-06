@@ -14,7 +14,7 @@ def main():
         print("{:d} arguments.".format(len(sys.argv) - 1), end="")
     elif len(sys.argv) - 1 == 1:
         print("{:d} argument:".format(len(sys.argv) - 1))
-        print("{:d}: {:s}".format(1, sys.argv[0]), end="")
+        print("{:d}: {:s}".format(1, sys.argv[1]), end="")
 
 
 if __name__ == "__main__":
