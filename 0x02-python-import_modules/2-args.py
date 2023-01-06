@@ -7,7 +7,7 @@ def main():
         print("{:d} arguments.".format(len(sys.argv) - 1), end="")
     elif len(sys.argv) - 1 == 1:
         print("{:d} argument:".format(len(sys.argv)))
-        print("{:d}: {:s}".format(1, sys.argv[0]), end="")
+        print("{:d}: {:s}".format(1, sys.argv[1]), end="")
     else:
         for j in range(1, len(sys.argv)):
             if j == len(sys.argv):
